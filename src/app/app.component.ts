@@ -9,11 +9,11 @@ import { Router } from '@angular/router';
 export class AppComponent implements OnInit {
   title = 'Routing 101';
 
-  constructor(private router:Router) {
+  constructor(private router: Router) {
 
   }
 
   ngOnInit() {
-    //this.router.navigate(['', {outlets: {portlet1: 'portlet1', portlet2: 'portlet2'}}]);
+    this.router.navigate(['', {outlets: {portlet1: 'portlet1', portlet2: 'portlet2'}}]);
   }
 }
